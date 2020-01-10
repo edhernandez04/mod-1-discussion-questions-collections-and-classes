@@ -67,3 +67,10 @@ pokemon = [
 # How would you return an array of all of the pokemon's names?
 # How would you determine whether or not the pokemon array contained any pokemon with a weight greater than 60?
 #  whatever method you use should return true if there are any such pokemon, false if not.
+
+pokemon[0][:abilities][0][:ability][:url]
+pokemon.find {|poke| poke[:base_experience] > 40}
+pokemon.select {|poke| poke[:base_experience] > 40}
+pokemon.map {|poke| poke[:name]}
+pokemon.select {|poke| poke[:weight] > 60}
+pokemon.map {|poke| poke[:weight] > 60}
